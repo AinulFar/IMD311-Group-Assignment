@@ -1,0 +1,546 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/33bf2f0969.js" crossorigin="anonymous"></script>
+
+        <title>BigBite</title>
+    </head>
+
+    <body>
+        <style>
+            body{
+                background-color: #141414;
+            }
+            h3{
+                font-size: 35px;
+                color: #000;
+                padding-bottom: 50px;
+                padding-top: 190px; 
+                text-align: center;
+            }
+            h6{
+                font-size: 15px;
+                text-align: center;
+                color: #fff;
+                line-height: 1.7;
+            }
+            hr{
+                margin: 130px;
+                margin-top: 30px;
+                margin-bottom: 5;
+            }
+            .text-flip{
+              font-size: 20px;
+              padding-top: 30px;
+              color: #ff9305;
+            }
+            .text-flip-small{
+              font-size: 15px;
+              padding-top: 20px;
+              line-height: 1.3;
+            }
+            .hero{
+            width: 90%;
+            height: 100vh;
+            padding: 0px 10%;
+            }
+            nav{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            }
+            nav .logo{
+            width: 150px;
+            margin-top: -1px;
+            margin-left: 70px;
+            }
+            nav ul{
+            flex: 1;
+            text-align: right;
+            margin-right: 100px;
+            }
+            nav ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 10px 30px;
+            }
+            nav ul li a{
+            text-decoration: none;
+            color: #fff;
+            font-weight: 700;
+            position: relative;
+            padding: 8px;
+            }
+            nav ul li a::before{
+            content: '';
+            width: 100%;
+            height: 0px;
+            background: #ff9305;
+            position: absolute;
+            z-index: -1;
+            left: 0;
+            bottom: 0;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            transition: height 0.3s;
+            }
+            nav ul li a:hover::before{
+            height: 85px;
+            }
+            .row{
+            display: flex;
+            flex-wrap: wrap;
+            }
+            .col{
+            flex-basis: 50%;
+            position: relative;
+            }
+            #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #ff9305;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+            }
+
+            #myBtn:hover {
+            background-color: #555;
+            }
+           
+        </style>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+            
+            <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            }
+            </script>
+        
+        <div>
+            <nav class="main-nav">
+                <img src="image/logo.png" class="logo">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Page 1 nav -->
+        <a name="home"></a>
+        <div class="container-nav">
+            <div class="hero">
+                <div class="row">
+                    <div class="col">
+                        <img src="image/logo.png" width="550">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 2 About -->
+        <a name="about"></a>
+        <div class="container-about">
+            <img src="image/pic-1.png" width="600" align="right">
+
+            <div class="text-about"><b>Story Telling</b></div>
+                <div class="text-about-small">QUALITY FOOD DELICATENESS & MAGIC PLACE</div>
+            
+                <hr style="width:100px;border:5px solid #ff9305" align=left class="round">
+            <br>
+            <div class="text-about-para">
+                Big Bite is a partnership business that was founded in 2022. <br>
+                It is located in Jalan Yam Tuan, Seremban and will be launched <br>
+                in 2023. Big Bite is a café that serves drinks, primarily coffee <br>
+                and matcha, as well as desserts in a quick and easy manner. <br>              
+                <br><br>
+                Furthermore, we offer a variety of products for the drink <br>
+                that allow people to choose their favourite,  such as the <br>
+                type of milk. We also provide a comfortable space for <br>
+                people to hang out with their friends or do their work. <br>
+                Other than that, we also want to do a seasonal menu so that <br>
+                people can try different types of desserts and drinks.
+            </div>
+        </div>
+
+        <br><br>
+    
+        <!-- Page 3 Mission Vision -->
+        <div class="container-vmo"><br><br><br><br><br>
+            <div class="text-vmo">ABOUT BIG BITE</div>
+                <div class="text-vmo-title"><b>Key features of our cafe</b></div><br>
+            <div class="services-row">
+                <div class="container-services">
+                    <div class="col-md-3 text-center">
+                        <div class="services-icon" align="center">01</div>
+                        <div class="text-vmo-small">Vision</div>
+                        <h6>
+                            <span style="font-weight:normal">
+                                <i>Big Bite</i> are built to design<br>
+                                a cafe environment that inspires and<br>
+                                unites the community in the states<br>
+                                through a delicious desserts and coffees.
+                            </span>
+                        </h6>
+                    </div>
+                </div>
+                <div class="container-services">
+                    <div class="col-md-3 text-center">
+                        <div class="services-icon" align="center">02</div>
+                        <div class="text-vmo-small">Mission</div>
+                        <h6>
+                            <span style="font-weight:normal">
+                                To serve the customer with the finest<br>
+                                healthy ingredients so that they enjoy<br>
+                                the foods, dessert as well as the coffee &<br>
+                                To ensure the customers get the best and<br>
+                                high quality of services
+                            </span>
+                        </h6>
+                    </div>
+                </div>
+                <div class="container-services">
+                    <div class="col-md-3 text-center">
+                        <div class="services-icon" align="center">03</div>
+                        <div class="text-vmo-small">Objectives</div>
+                        <h6>
+                            <span style="font-weight:normal">
+                                •	To allow people satisfied their craving<br>
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                by getting varieties of foods, dessert and coffees.<br>
+                                •	To provide a place where people can go<br>
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                to relax themselves while having our products.
+                            </span>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 4 Team -->
+        <a name="team"></a> 
+        <div class="text-team"><b>Our Team</b></div><br><br>
+        <div class="team-row">
+            <div class="profile-box">
+                <h4>Farah<br>Athirah</h4>
+                <small>Founder / <br>Certified<br>Chef</small>
+                <img src="image/face1.jpg">
+                <div class="social-box">
+                    <a href="https://www.instagram.com/farahyxtm/" target="_blank"><i class="fa fa-instagram"></i></i></a>
+                    <a href="mailto:farahyatim07@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                    <a href="https://wa.me/60143196941" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="profile-box">
+                <h4>Ainul<br>Farhana</h4>
+                <small>Master<br>Pastry Chef</small>
+                <img src="image/face2.jpg">
+                <div class="social-box">
+                    <a href="https://www.instagram.com/frhn_aa/" target="_blank"><i class="fa fa-instagram"></i></i></a>
+                    <a href="mailto:ainulhana02@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                    <a href="https://wa.me/60174180629" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="profile-box">
+                <h4>Yasmin<br>Nadhirah</h4>
+                <small>Certified<br>Baker</small>
+                <img src="image/face3.jpg">
+                <div class="social-box">
+                    <a href="https://www.instagram.com/_ysmnkfli/" target="_blank"><i class="fa fa-instagram"></i></i></a>
+                    <a href="mailto:yasminnadhirah17@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                    <a href="https://wa.me/60173451710" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="profile-box">
+                <h4>Nur<br>Azeera</h4>
+                <small>Skilled<br>Barista & <br>Decorating</small>
+                <img src="image/face4.jpg">
+                <div class="social-box">
+                    <a href="https://instagram.com/zzeexc._?igshid=YWJhMjlhZTc=" target="_blank"><i class="fa fa-instagram"></i></i></a>
+                    <a href="mailto:nurazeeraa21@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                    <a href="https://wa.me/60136399487" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <br><br><br><br>
+
+        <!-- Page 5 menu -->
+        <a name="menu"></a>
+        <div class="container-menu">
+        <h3>Our Special Menu</h3>
+        <table align ="center">
+            <tr>
+                <td>
+                    <div class="menu">
+                        <div class="single-menu">
+                            <img src="image/menu1.jpeg">
+                            <div class="menu-content">
+                                <h4>Matcha Latte<span>MYR 8</span></h4>
+                                <p>Matcha has approximately 10x more nutrients than regular green tea
+                                    This is for all matcha lovers out there!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+        
+                </td>
+                <td>
+                    <div class="menu">
+                        <div class="single-menu">
+                            <img src="image/menu2.png">
+                            <div class="menu-content">
+                                <h4>Coffee Latte<span>MYR 8</span></h4>
+                                <p>Imported coffee beans makes our customers loves this drinks.</p>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="menu">
+                        <div class="single-menu">
+                            <img src="image/menu3.jpg">
+                            <div class="menu-content">
+                                <h4>Bolognese Pasta<span>MYR 15</span></h4>
+                                <p>Tender and flavourful meatballs with homemade marinara.
+                                    The meatballs in this recipe are packed with flavour and are at the perfect consistency.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+        
+                </td>
+                <td>
+                    <div class="menu">
+                        <div class="single-menu">
+                            <img src="image/menu4.jpg">
+                            <div class="menu-content">
+                                <h4>Pesto Pasta<span>MYR 18</span></h4>
+                                <p>Pesto or the pesto alla genovese is a traditional Italian 
+                                    sauce made with fresh basil leaves & pine nuts. This has made poeple screams for more!.</p>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="menu">
+                        <div class="single-menu">
+                            <img src="image/menu5.jpeg">
+                            <div class="menu-content">
+                                <h4>Pavlova<span>MYR 10</span></h4>
+                                <p>Our fruity pavlova is made by love which also one of our special menus here.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                </td>
+                <td>
+                    <div class="menu">
+                        <div class="single-menu">
+                            <img src="image/menu6.png">
+                            <div class="menu-content">
+                                <h4>IceCream Croffle<span>MYR 11</span></h4>
+                                <p>Want something unique and fun? You cannot go wrong by 
+                                    eating this while having any of our hot drinks.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        </div>
+
+        <!-- Page 6 Gallery -->
+        <a name="gallery"></a>
+        <div class="text-gallery-title"><b>Our Gallery</b></div>
+        <div class="row-gallery">
+            <div class="column-gallery">
+                <div class="container-gallery">
+                    <img src="image/gall1.jpg" alt="Bar Table" class="image-gallery">
+                    <div class="overlay-gallery">
+                        <div class="text-gallery">Bar Table</div>
+                    </div>
+                </div>
+            </div>
+            <div class="column-gallery">
+                <div class="container-gallery">
+                    <img src="image/gall2.jpg" alt="Bar Table" class="image-gallery">
+                    <div class="overlay-gallery">
+                        <div class="text-gallery">Counter</div>
+                    </div>
+                </div>
+            </div>
+            <div class="column-gallery">
+                <div class="container-gallery">
+                    <img src="image/gall3.jpg" alt="Bar Table" class="image-gallery">
+                    <div class="overlay-gallery">
+                        <div class="text-gallery">Dining</div>
+                    </div>
+                </div>
+            </div>
+            <div class="column-gallery">
+                <div class="container-gallery">
+                    <img src="image/gall4.jpg" alt="Bar Table" class="image-gallery">
+                    <div class="overlay-gallery">
+                        <div class="text-gallery">Food Counter</div>
+                    </div>
+                </div>
+            </div>
+            <div class="column-gallery">
+                <div class="container-gallery">
+                    <img src="image/gall5.jpg" alt="Bar Table" class="image-gallery">
+                    <div class="overlay-gallery">
+                        <div class="text-gallery">Open Area</div>
+                    </div>
+                </div>
+            </div>
+            <div class="column-gallery">
+                <div class="container-gallery">
+                    <img src="image/gall6.jpg" alt="Bar Table" class="image-gallery">
+                    <div class="overlay-gallery">
+                        <div class="text-gallery">OOTD Spot</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br><br>
+
+        <!-- Page 6 Faq -->
+        <a name="faq"></a>
+        <div class="container-faq"><br><br><br><br>
+            <div class="text-vmo-title"><b>FAQ</b></div><br><br>
+            <div class="row">
+                <div class="column">
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="image/faq1.jpg" alt="Paris" style="width:300px;height:200px">
+                    </div>
+                        <div class="flip-box-back">
+                        <div class="text-flip">Business Hour</div>
+                        <div class="text-flip-small">Monday to Sunday<br>7.00am until 7.00pm</div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="column">
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="image/faq2.jpg" alt="Paris" style="width:300px;height:200px">
+                    </div>
+                        <div class="flip-box-back">
+                        <div class="text-flip">Foods</div>
+                            <div class="text-flip-small">Desserts;<br>Macaroons, Pavlova, Cakes<br>
+                            Drinks;<br>Coffee Latte, Milkshake, Juice
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                        <img src="image/faq3.jpg" alt="Paris" style="width:300px;height:200px">
+                        </div>
+                        <div class="flip-box-back">
+                            <div class="text-flip">Coffee Beans</div>
+                            <div class="text-flip-small">Arabica</div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="column">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="image/faq4.jpg" alt="Paris" style="width:300px;height:200px">
+                        </div>
+                            <div class="flip-box-back">
+                            <div class="text-flip">Lactose Intolerance</div>
+                                <div class="text-flip-small">Yes, Customers can customize<br>their own drink<br>
+                                For example: They requested almond milk for their milk base</div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+
+        <a name="contact"></a> 
+        <footer class="footer-distributed">
+            <div class="footer-left">
+                <h4>Big<span>Bite</span></h4><br>
+
+                <p class="footer-company-name">Copyright © 2023 <strong>BigBite</strong> All rights reserved</p>
+            </div>
+    
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>Jalan Yam Tuan,</span>
+                        Seremban</p>
+                </div>
+    
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+601 4319 6941</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:BigB1te@gmail.com">BigB1te@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    <span>About our cafe</span>
+                    <strong>Big Bite</strong> Big Bite is a café that 
+                    serves drinks, primarily coffee and matcha, as well as foods and desserts.
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
